@@ -1,217 +1,284 @@
-<form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="gsheets" name="form" style="padding: 10px;">
-    <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-1">
-      <label class="u-label">Will You Be Attending?</label>
-      <div class="u-form-radio-button-wrapper">
-        <div class="u-input-row">
-          <input id="field-a077" type="radio" name="attending" value="1" class="u-field-input" checked="checked" required="required" data-calc="1">
-          <label class="u-field-label" for="field-a077">Yes</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-3d1e" type="radio" name="attending" value="0" class="u-field-input" required="required" data-calc="0">
-          <label class="u-field-label" for="field-3d1e">No</label>
-        </div>
+<form action="https://forms.nicepagesrv.com/v2/form/process"
+  class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="gsheets" name="form" style="padding: 10px">
+  <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-1">
+    <label class="u-label">Will You Be Attending?</label>
+    <div class="u-form-radio-button-wrapper">
+      <div class="u-input-row">
+        <input id="field-a077" type="radio" name="attending" value="1" class="u-field-input" checked="checked"
+          required="required" data-calc="1" />
+        <label class="u-field-label" for="field-a077">Yes</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-3d1e" type="radio" name="attending" value="0" class="u-field-input" required="required"
+          data-calc="0" />
+        <label class="u-field-label" for="field-3d1e">No</label>
       </div>
     </div>
-    <h4 class="u-form-group u-form-text u-text u-text-2"> Your Details</h4>
-    <div class="u-form-group u-form-name">
-      <label for="name-4ca2" class="u-label">Full Name</label>
-      <input type="text" placeholder="Enter your Full Name" id="name-4ca2" name="name" class="u-input u-input-rectangle" required="">
-    </div>
-    <div class="u-form-email u-form-group u-form-partition-factor-2">
-      <label for="email-4ca2" class="u-label">Email</label>
-      <input type="email" placeholder="Enter email address" id="email-4ca2" name="email" class="u-input u-input-rectangle" required="">
-    </div>
-    <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-5">
-      <label for="phone-ac95" class="u-label">Phone</label>
-      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. 07155552675)" id="phone-ac95" name="phone" class="u-input u-input-rectangle" required="">
-    </div>
-    <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-6" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;attending&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Do You Have any Allergens or Dietary Preference</label>
-      <div class="u-form-radio-button-wrapper">
-        <div class="u-input-row">
-          <input id="field-ea86" type="radio" name="prefs" value="1" class="u-field-input" data-calc="1" required="required">
-          <label class="u-field-label" for="field-ea86">Yes</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-54ab" type="radio" name="prefs" value="0" class="u-field-input" data-calc="0" required="required" checked="checked">
-          <label class="u-field-label" for="field-54ab">No</label>
-        </div>
+  </div>
+  <h4 class="u-form-group u-form-text u-text u-text-2">
+    Your Details
+  </h4>
+  <div class="u-form-group u-form-name">
+    <label for="name-4ca2" class="u-label">Full Name</label>
+    <input type="text" placeholder="Enter your Full Name" id="name-4ca2" name="name" class="u-input u-input-rectangle"
+      required="" />
+  </div>
+  <div class="u-form-email u-form-group u-form-partition-factor-2">
+    <label for="email-4ca2" class="u-label">Email</label>
+    <input type="email" placeholder="Enter email address" id="email-4ca2" name="email" class="u-input u-input-rectangle"
+      required="" />
+  </div>
+  <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-5">
+    <label for="phone-ac95" class="u-label">Phone</label>
+    <input type="tel"
+      pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
+      placeholder="Enter your phone (e.g. 07155552675)" id="phone-ac95" name="phone" class="u-input u-input-rectangle"
+      required="" />
+  </div>
+  <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-6"
+    data-dependency='[{"action":"show","field":"attending","condition":"equal","value":1}]'>
+    <label class="u-label">Do You Have any Allergens or Dietary Preference</label>
+    <div class="u-form-radio-button-wrapper">
+      <div class="u-input-row">
+        <input id="field-ea86" type="radio" name="prefs" value="1" class="u-field-input" data-calc="1"
+          required="required" />
+        <label class="u-field-label" for="field-ea86">Yes</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-54ab" type="radio" name="prefs" value="0" class="u-field-input" data-calc="0"
+          required="required" checked="checked" />
+        <label class="u-field-label" for="field-54ab">No</label>
       </div>
     </div>
-    <div class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-7" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;prefs&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Preference</label>
-      <div class="u-form-checkbox-group-wrapper">
-        <div class="u-input-row">
-          <input id="field-8f4c" type="checkbox" name="foodpref[]" value="Gluten Free" class="u-field-input" data-calc="Gluten Free">
-          <label class="u-field-label" for="field-8f4c">Gluten Free</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-3f90" type="checkbox" name="foodpref[]" value="Vegan" class="u-field-input" data-calc="Vegan">
-          <label class="u-field-label" for="field-3f90">Vegan</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-1bd1" type="checkbox" name="foodpref[]" value="Vegetarian" class="u-field-input" data-calc="Vegetarian">
-          <label class="u-field-label" for="field-1bd1">Vegetarian</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-c6b0" data-calc="Pescatarian" type="checkbox" name="foodpref[]" value="Pescatarian" class="u-field-input">
-          <label class="u-field-label" for="field-c6b0">Pescatarian</label>
-        </div>
+  </div>
+  <div
+    class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-7"
+    data-dependency='[{"action":"show","field":"prefs","condition":"equal","value":1}]'>
+    <label class="u-label">Preference</label>
+    <div class="u-form-checkbox-group-wrapper">
+      <div class="u-input-row">
+        <input id="field-8f4c" type="checkbox" name="foodpref[]" value="Gluten Free" class="u-field-input"
+          data-calc="Gluten Free" />
+        <label class="u-field-label" for="field-8f4c">Gluten Free</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-3f90" type="checkbox" name="foodpref[]" value="Vegan" class="u-field-input"
+          data-calc="Vegan" />
+        <label class="u-field-label" for="field-3f90">Vegan</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-1bd1" type="checkbox" name="foodpref[]" value="Vegetarian" class="u-field-input"
+          data-calc="Vegetarian" />
+        <label class="u-field-label" for="field-1bd1">Vegetarian</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-c6b0" data-calc="Pescatarian" type="checkbox" name="foodpref[]" value="Pescatarian"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-c6b0">Pescatarian</label>
       </div>
     </div>
-    <div class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-8" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;prefs&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Allergens</label>
-      <div class="u-form-checkbox-group-wrapper">
-        <div class="u-input-row">
-          <input id="field-42c7" type="checkbox" name="allergens[]" value="Dairy" class="u-field-input" data-calc="Dairy">
-          <label class="u-field-label" for="field-42c7">Dairy</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-8bae" type="checkbox" name="allergens[]" value="Nuts" class="u-field-input" data-calc="Nuts">
-          <label class="u-field-label" for="field-8bae">Nuts</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-832c" type="checkbox" name="allergens[]" value="Eggs" class="u-field-input" data-calc="Eggs">
-          <label class="u-field-label" for="field-832c">Eggs</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-31f4" data-calc="Soya" type="checkbox" name="allergens[]" value="Soya" class="u-field-input">
-          <label class="u-field-label" for="field-31f4">Soya</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-eebd" data-calc="Shellfish" type="checkbox" name="allergens[]" value="Shellfish" class="u-field-input">
-          <label class="u-field-label" for="field-eebd">Shellfish</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-58f1" data-calc="Wheat" type="checkbox" name="allergens[]" value="Wheat" class="u-field-input">
-          <label class="u-field-label" for="field-58f1">Wheat</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-88d5" data-calc="Other" type="checkbox" name="allergens[]" value="Other" class="u-field-input">
-          <label class="u-field-label" for="field-88d5">Other</label>
-        </div>
+  </div>
+  <div
+    class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-8"
+    data-dependency='[{"action":"show","field":"prefs","condition":"equal","value":1}]'>
+    <label class="u-label">Allergens</label>
+    <div class="u-form-checkbox-group-wrapper">
+      <div class="u-input-row">
+        <input id="field-42c7" type="checkbox" name="allergens[]" value="Dairy" class="u-field-input"
+          data-calc="Dairy" />
+        <label class="u-field-label" for="field-42c7">Dairy</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-8bae" type="checkbox" name="allergens[]" value="Nuts" class="u-field-input" data-calc="Nuts" />
+        <label class="u-field-label" for="field-8bae">Nuts</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-832c" type="checkbox" name="allergens[]" value="Eggs" class="u-field-input" data-calc="Eggs" />
+        <label class="u-field-label" for="field-832c">Eggs</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-31f4" data-calc="Soya" type="checkbox" name="allergens[]" value="Soya" class="u-field-input" />
+        <label class="u-field-label" for="field-31f4">Soya</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-eebd" data-calc="Shellfish" type="checkbox" name="allergens[]" value="Shellfish"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-eebd">Shellfish</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-58f1" data-calc="Wheat" type="checkbox" name="allergens[]" value="Wheat"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-58f1">Wheat</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-88d5" data-calc="Other" type="checkbox" name="allergens[]" value="Other"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-88d5">Other</label>
       </div>
     </div>
-    <div class="u-form-group u-form-partition-factor-3 u-form-group-9" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;allergens&quot;,&quot;condition&quot;:&quot;has&quot;,&quot;value&quot;:&quot;Other&quot;}]">
-      <label for="text-3424" class="u-label">Other Allergen</label>
-      <input type="text" placeholder="Detail of other allergens" id="text-3424" name="otherallergen" class="u-input u-input-rectangle">
-    </div>
-    <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-10" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;attending&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Will You Be Bringing Another Guest? (i.e. Your Partner)</label>
-      <div class="u-form-radio-button-wrapper">
-        <div class="u-input-row">
-          <input id="field-8251" type="radio" name="plusone" value="1" class="u-field-input" required="required" data-calc="1">
-          <label class="u-field-label" for="field-8251">Yes</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-416e" type="radio" name="plusone" value="0" class="u-field-input" required="required" data-calc="0" checked="checked">
-          <label class="u-field-label" for="field-416e">No</label>
-        </div>
+  </div>
+  <div class="u-form-group u-form-partition-factor-3 u-form-group-9"
+    data-dependency='[{"action":"show","field":"allergens","condition":"has","value":"Other"}]'>
+    <label for="text-3424" class="u-label">Other Allergen</label>
+    <input type="text" placeholder="Detail of other allergens" id="text-3424" name="otherallergen"
+      class="u-input u-input-rectangle" />
+  </div>
+  <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-10"
+    data-dependency='[{"action":"show","field":"attending","condition":"equal","value":1}]'>
+    <label class="u-label">Will You Be Bringing Another Guest? (i.e. Your Partner)</label>
+    <div class="u-form-radio-button-wrapper">
+      <div class="u-input-row">
+        <input id="field-8251" type="radio" name="plusone" value="1" class="u-field-input" required="required"
+          data-calc="1" />
+        <label class="u-field-label" for="field-8251">Yes</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-416e" type="radio" name="plusone" value="0" class="u-field-input" required="required"
+          data-calc="0" checked="checked" />
+        <label class="u-field-label" for="field-416e">No</label>
       </div>
     </div>
-    <h4 class="guest2 u-form-group u-form-text u-text u-text-3" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;plusone&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]"> Details for Second Guest</h4>
-    <div class="u-form-group u-form-group-12" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;plusone&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label for="text-2d18" class="u-label">Full Name</label>
-      <input type="text" placeholder="Enter the Name of you plus one" id="text-2d18" name="name2" class="u-input u-input-rectangle">
-    </div>
-    <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-13" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;plusone&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label for="email-cb67" class="u-label">Email</label>
-      <input type="email" placeholder="Enter email address of your plus one" id="email-cb67" name="email2" class="u-input u-input-rectangle">
-    </div>
-    <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-14" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;plusone&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;1&quot;}]">
-      <label for="phone-750f" class="u-label">Phone</label>
-      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. 07155552675)" id="phone-750f" name="phone2" class="u-input u-input-rectangle" required="">
-    </div>
-    <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-15" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;plusone&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Do You Have any Allergens or Dietary Preference</label>
-      <div class="u-form-radio-button-wrapper">
-        <div class="u-input-row">
-          <input id="field-1b16" type="radio" name="prefs2" value="1" class="u-field-input" data-calc="1">
-          <label class="u-field-label" for="field-1b16">Yes</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-cb86" type="radio" name="prefs2" value="0" class="u-field-input" data-calc="0" checked="checked">
-          <label class="u-field-label" for="field-cb86">No</label>
-        </div>
+  </div>
+  <h4 class="guest2 u-form-group u-form-text u-text u-text-3"
+    data-dependency='[{"action":"show","field":"plusone","condition":"equal","value":1}]'>
+    Details for Second Guest
+  </h4>
+  <div class="u-form-group u-form-group-12"
+    data-dependency='[{"action":"show","field":"plusone","condition":"equal","value":1}]'>
+    <label for="text-2d18" class="u-label">Full Name</label>
+    <input type="text" placeholder="Enter the Name of you plus one" id="text-2d18" name="name2"
+      class="u-input u-input-rectangle" />
+  </div>
+  <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-13"
+    data-dependency='[{"action":"show","field":"plusone","condition":"equal","value":1}]'>
+    <label for="email-cb67" class="u-label">Email</label>
+    <input type="email" placeholder="Enter email address of your plus one" id="email-cb67" name="email2"
+      class="u-input u-input-rectangle" />
+  </div>
+  <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-14"
+    data-dependency='[{"action":"show","field":"plusone","condition":"equal","value":"1"}]'>
+    <label for="phone-750f" class="u-label">Phone</label>
+    <input type="tel"
+      pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
+      placeholder="Enter your phone (e.g. 07155552675)" id="phone-750f" name="phone2"
+      class="u-input u-input-rectangle" />
+  </div>
+  <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-15"
+    data-dependency='[{"action":"show","field":"plusone","condition":"equal","value":1}]'>
+    <label class="u-label">Do You Have any Allergens or Dietary Preference</label>
+    <div class="u-form-radio-button-wrapper">
+      <div class="u-input-row">
+        <input id="field-1b16" type="radio" name="prefs2" value="1" class="u-field-input" data-calc="1" />
+        <label class="u-field-label" for="field-1b16">Yes</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-cb86" type="radio" name="prefs2" value="0" class="u-field-input" data-calc="0"
+          checked="checked" />
+        <label class="u-field-label" for="field-cb86">No</label>
       </div>
     </div>
-    <div class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-16" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;prefs2&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;1&quot;}]">
-      <label class="u-label">Preference</label>
-      <div class="u-form-checkbox-group-wrapper">
-        <div class="u-input-row">
-          <input id="field-b19a" type="checkbox" name="foodpref2[]" value="Gluten Free" class="u-field-input" data-calc="Gluten Free">
-          <label class="u-field-label" for="field-b19a">Gluten Free</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-ae31" type="checkbox" name="foodpref2[]" value="Vegan" class="u-field-input" data-calc="Vegan">
-          <label class="u-field-label" for="field-ae31">Vegan</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-88de" type="checkbox" name="foodpref2[]" value="Vegetarian" class="u-field-input" data-calc="Vegetarian">
-          <label class="u-field-label" for="field-88de">Vegetarian</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-5c7e" data-calc="Pescatarian" type="checkbox" name="foodpref2[]" value="Pescatarian" class="u-field-input">
-          <label class="u-field-label" for="field-5c7e">Pescatarian</label>
-        </div>
+  </div>
+  <div
+    class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-16"
+    data-dependency='[{"action":"show","field":"prefs2","condition":"equal","value":"1"}]'>
+    <label class="u-label">Preference</label>
+    <div class="u-form-checkbox-group-wrapper">
+      <div class="u-input-row">
+        <input id="field-b19a" type="checkbox" name="foodpref2[]" value="Gluten Free" class="u-field-input"
+          data-calc="Gluten Free" />
+        <label class="u-field-label" for="field-b19a">Gluten Free</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-ae31" type="checkbox" name="foodpref2[]" value="Vegan" class="u-field-input"
+          data-calc="Vegan" />
+        <label class="u-field-label" for="field-ae31">Vegan</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-88de" type="checkbox" name="foodpref2[]" value="Vegetarian" class="u-field-input"
+          data-calc="Vegetarian" />
+        <label class="u-field-label" for="field-88de">Vegetarian</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-5c7e" data-calc="Pescatarian" type="checkbox" name="foodpref2[]" value="Pescatarian"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-5c7e">Pescatarian</label>
       </div>
     </div>
-    <div class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-17" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;prefs2&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;1&quot;}]">
-      <label class="u-label">Allergens</label>
-      <div class="u-form-checkbox-group-wrapper">
-        <div class="u-input-row">
-          <input id="field-6722" type="checkbox" name="allergens2[]" value="Dairy" class="u-field-input" data-calc="Dairy">
-          <label class="u-field-label" for="field-6722">Dairy</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-2260" type="checkbox" name="allergens2[]" value="Nuts" class="u-field-input" data-calc="Nuts">
-          <label class="u-field-label" for="field-2260">Nuts</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-5473" type="checkbox" name="allergens2[]" value="Eggs" class="u-field-input" data-calc="Eggs">
-          <label class="u-field-label" for="field-5473">Eggs</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-7d59" data-calc="Soya" type="checkbox" name="allergens2[]" value="Soya" class="u-field-input">
-          <label class="u-field-label" for="field-7d59">Soya</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-4453" data-calc="Shellfish" type="checkbox" name="allergens2[]" value="Shellfish" class="u-field-input">
-          <label class="u-field-label" for="field-4453">Shellfish</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-f10a" data-calc="Wheat" type="checkbox" name="allergens2[]" value="Wheat" class="u-field-input">
-          <label class="u-field-label" for="field-f10a">Wheat</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-1701" data-calc="Other" type="checkbox" name="allergens2[]" value="Other" class="u-field-input">
-          <label class="u-field-label" for="field-1701">Other</label>
-        </div>
+  </div>
+  <div
+    class="u-form-checkbox-group u-form-group u-form-input-layout-horizontal u-form-partition-factor-3 u-form-group-17"
+    data-dependency='[{"action":"show","field":"prefs2","condition":"equal","value":"1"}]'>
+    <label class="u-label">Allergens</label>
+    <div class="u-form-checkbox-group-wrapper">
+      <div class="u-input-row">
+        <input id="field-6722" type="checkbox" name="allergens2[]" value="Dairy" class="u-field-input"
+          data-calc="Dairy" />
+        <label class="u-field-label" for="field-6722">Dairy</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-2260" type="checkbox" name="allergens2[]" value="Nuts" class="u-field-input"
+          data-calc="Nuts" />
+        <label class="u-field-label" for="field-2260">Nuts</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-5473" type="checkbox" name="allergens2[]" value="Eggs" class="u-field-input"
+          data-calc="Eggs" />
+        <label class="u-field-label" for="field-5473">Eggs</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-7d59" data-calc="Soya" type="checkbox" name="allergens2[]" value="Soya"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-7d59">Soya</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-4453" data-calc="Shellfish" type="checkbox" name="allergens2[]" value="Shellfish"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-4453">Shellfish</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-f10a" data-calc="Wheat" type="checkbox" name="allergens2[]" value="Wheat"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-f10a">Wheat</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-1701" data-calc="Other" type="checkbox" name="allergens2[]" value="Other"
+          class="u-field-input" />
+        <label class="u-field-label" for="field-1701">Other</label>
       </div>
     </div>
-    <div class="u-form-group u-form-partition-factor-3 u-form-group-18" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;allergens2&quot;,&quot;condition&quot;:&quot;has&quot;,&quot;value&quot;:&quot;Other&quot;}]">
-      <label for="text-064b" class="u-label">Other Allergen</label>
-      <input type="text" placeholder="Detail of other allergens" id="text-064b" name="otherallergen2" class="u-input u-input-rectangle">
-    </div>
-    <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-19" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;attending&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
-      <label class="u-label">Will You Require Accommodation? (7th October)</label>
-      <div class="u-form-radio-button-wrapper">
-        <div class="u-input-row">
-          <input id="field-6375" type="radio" name="room" value="1" class="u-field-input" required="required" data-calc="1">
-          <label class="u-field-label" for="field-6375">Yes</label>
-        </div>
-        <div class="u-input-row">
-          <input id="field-3535" type="radio" name="room" value="0" class="u-field-input" required="required" data-calc="0" checked="checked">
-          <label class="u-field-label" for="field-3535">No</label>
-        </div>
+  </div>
+  <div class="u-form-group u-form-partition-factor-3 u-form-group-18"
+    data-dependency='[{"action":"show","field":"allergens2","condition":"has","value":"Other"}]'>
+    <label for="text-064b" class="u-label">Other Allergen</label>
+    <input type="text" placeholder="Detail of other allergens" id="text-064b" name="otherallergen2"
+      class="u-input u-input-rectangle" />
+  </div>
+  <div class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-form-group-19"
+    data-dependency='[{"action":"show","field":"attending","condition":"equal","value":1}]'>
+    <label class="u-label">Will You Require Accommodation? (7th October)</label>
+    <div class="u-form-radio-button-wrapper">
+      <div class="u-input-row">
+        <input id="field-6375" type="radio" name="room" value="1" class="u-field-input" required="required"
+          data-calc="1" />
+        <label class="u-field-label" for="field-6375">Yes</label>
+      </div>
+      <div class="u-input-row">
+        <input id="field-3535" type="radio" name="room" value="0" class="u-field-input" required="required"
+          data-calc="0" checked="checked" />
+        <label class="u-field-label" for="field-3535">No</label>
       </div>
     </div>
-    <div class="u-align-left u-form-group u-form-submit">
-      <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Submit</a>
-      <input type="submit" value="submit" class="u-form-control-hidden">
-    </div>
-    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-    <input type="hidden" value="" name="recaptchaResponse">
-    <input type="hidden" name="formServices" value="d0427e91-8ec9-4c27-ac8f-7408a22db2e8">
-  </form>
+  </div>
+  <div class="u-align-left u-form-group u-form-submit">
+    <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Submit</a>
+    <input type="submit" value="submit" class="u-form-control-hidden" />
+  </div>
+  <div class="u-form-send-message u-form-send-success">
+    Thank you! Your message has been sent.
+  </div>
+  <div class="u-form-send-error u-form-send-message">
+    Unable to send your message. Please fix errors then try again.
+  </div>
+  <input type="hidden" value="" name="recaptchaResponse" />
+  <input type="hidden" name="formServices" value="d0427e91-8ec9-4c27-ac8f-7408a22db2e8" />
+</form>
