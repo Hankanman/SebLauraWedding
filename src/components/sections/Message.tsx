@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export function Message() {
+  const t = useTranslations('Message');
+
   return (
     <section id="message" className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -26,12 +29,10 @@ export function Message() {
           </div>
           <div className="order-2 md:order-2 glass-card p-8 md:p-12">
             <h2 className="mb-6 font-serif text-3xl font-bold text-gray-900">
-              We are looking forward to seeing you on the day!
+              {t('title')}
             </h2>
             <p className="text-lg text-gray-700 font-sans leading-relaxed">
-              We will have a live band throughout the day, there is a private bar
-              and drink on arrival, there will be no legal bit, so you can object
-              all you like, it&apos;s still happening.
+              {t('body')}
             </p>
           </div>
         </div>

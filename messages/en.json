@@ -1,0 +1,78 @@
+{
+  "Hero": {
+    "title": "Seb & Laura Are Getting Married!",
+    "description": "We are thrilled to invite you to share in our joy as we take the next step in our journey together. This website is designed to provide you with all the information you need about our special day. You'll find details about the venue, schedule, accommodations, and more.",
+    "rsvpButton": "RSVP Here"
+  },
+  "When": {
+    "title": "When",
+    "date": "Monday, 7th of October 2024",
+    "timeArrival": "2pm",
+    "timeCeremony": "3pm",
+    "description": "We are getting married on <bold>{date}</bold>. You can arrive from <bold>{timeArrival}</bold> and the ceremony will start at <bold>{timeCeremony}</bold>",
+    "accommodation": "There is accommodation onsite (details below) so if you expect to stay we suggest securing your availability for the <bold>7th and 8th</bold>."
+  },
+  "Where": {
+    "title": "Where",
+    "venueName": "The Farmhouse at Redcoats",
+    "addressLine1": "Redcoats Green",
+    "addressLine2": "Hitchin",
+    "addressLine3": "Hertfordshire",
+    "postcode": "SG4 7JR",
+    "phone": "01438 729500"
+  },
+  "ThemeFood": {
+    "title": "Theme & Food",
+    "theme": "Be Your Own Weird (Because we are weird and so are you)",
+    "clothing": "We want you to be comfortable, so wear what you want, be who you are, you can come all dressed up, or a little more casual, or maybe a little fantastical!",
+    "food": "We are having a party, so be prepared to dance, drink, and eat. There will be a BBQ, with vegan and vegetarian options, so there is something for everyone. Just let us know any preferences when you <link>RSVP below</link>."
+  },
+  "Gallery": {
+    "title": "Almost Ten Years of Growing, Drinking, & Loving",
+    "subtitle": "Apparently we mostly take selfies when we are drinking or abroad, that seems about right, we have had many adventures over the last decade."
+  },
+  "Message": {
+    "title": "We are looking forward to seeing you on the day!",
+    "body": "We will have a live band throughout the day, there is a private bar and drink on arrival, there will be no legal bit, so you can object all you like, it's still happening."
+  },
+  "Gifts": {
+    "title": "What",
+    "poem1": "To avoid your gifts being regifted or stashed\nWe could really make use of some money or cash",
+    "poem2": "Towards our honeymoon, a car, a house, who knows\nYour generosity in our memory will eternally glow",
+    "poem3": "But please don't think of this is as a fee\nYour presence, not presents bring us glee",
+    "dogsNote": "As much as we would love to invite everyone's children, this is an adult only event. Please note this event is for our own dogs only."
+  },
+  "RSVP": {
+    "title": "RSVP",
+    "subtitle": "Please Respond Below",
+    "attendingLabel": "Will You Be Attending?",
+    "yes": "Yes",
+    "no": "No",
+    "yourDetails": "Your Details",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "dietaryLabel": "Do You Have any Allergens or Dietary Preference?",
+    "preferenceLabel": "Preference",
+    "allergensLabel": "Allergens",
+    "otherAllergenLabel": "Other Allergen Details",
+    "plusOneLabel": "Will You Be Bringing Another Guest? (i.e. Your Partner)",
+    "guestDetails": "Details for Second Guest",
+    "guestDietaryLabel": "Do They Have any Allergens or Dietary Preference?",
+    "accommodationLabel": "Will You Require Accommodation? (7th October)",
+    "submitButton": "Submit RSVP",
+    "successTitle": "Thank You!",
+    "successMessage": "Your RSVP has been received."
+  },
+  "Navigation": {
+    "home": "Home",
+    "when": "When",
+    "where": "Where",
+    "theme": "Theme",
+    "gallery": "Gallery",
+    "message": "Message",
+    "gifts": "Gifts",
+    "rsvp": "RSVP"
+  }
+}
+

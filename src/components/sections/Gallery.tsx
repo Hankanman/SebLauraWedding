@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const images = [
   "/images/gallery/1.jpg",
@@ -24,6 +25,7 @@ const images = [
 ];
 
 export function Gallery() {
+  const t = useTranslations('Gallery');
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
   );
@@ -44,12 +46,10 @@ export function Gallery() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="glass-card mb-12 max-w-2xl mx-auto p-8 text-center">
           <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
-            Almost Ten Years of Growing, Drinking, & Loving
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-700 font-sans">
-            Apparently we mostly take selfies when we are drinking or abroad,
-            that seems about right, we have had many adventures over the last
-            decade.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export function Gallery() {
               {images.map((src, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
                   <div className="p-1">
-                    <div className="relative overflow-hidden rounded-lg shadow-xl aspect-4/3 border-4 border-white/50">
+                    <div className="relative overflow-hidden rounded-lg shadow-xl aspect-[4/3] border-4 border-white/50">
                       <Image
                         src={src}
                         alt={`Gallery image ${index + 1}`}

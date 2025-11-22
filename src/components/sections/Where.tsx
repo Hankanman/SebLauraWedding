@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export function Where() {
+  const t = useTranslations('Where');
+
   return (
     <section id="where" className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -38,7 +41,7 @@ export function Where() {
                 height={192}
                 className="mb-8 w-48 object-contain drop-shadow-md invert"
               />
-              <h2 className="mb-6 font-serif text-3xl font-bold">Where</h2>
+              <h2 className="mb-6 font-serif text-3xl font-bold">{t('title')}</h2>
               <div className="text-lg font-sans">
                 <a
                   href="https://maps.app.goo.gl/7bZqm4XsDHHUiZQ96"
@@ -46,13 +49,13 @@ export function Where() {
                   rel="noopener noreferrer"
                   className="hover:text-brand transition-colors block"
                 >
-                  <p className="font-bold mb-2">The Farmhouse at Redcoats,</p>
-                  <p>Redcoats Green,</p>
-                  <p>Hitchin,</p>
-                  <p>Hertfordshire,</p>
-                  <p>SG4 7JR</p>
+                  <p className="font-bold mb-2">{t('venueName')},</p>
+                  <p>{t('addressLine1')},</p>
+                  <p>{t('addressLine2')},</p>
+                  <p>{t('addressLine3')},</p>
+                  <p>{t('postcode')}</p>
                 </a>
-                <p className="mt-4">01438 729500</p>
+                <p className="mt-4">{t('phone')}</p>
               </div>
             </div>
           </div>

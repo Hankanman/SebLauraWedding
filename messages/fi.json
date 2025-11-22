@@ -1,0 +1,78 @@
+{
+  "Hero": {
+    "title": "Seb & Laura Menevät Naimisiin!",
+    "description": "Olemme innoissamme voidessamme kutsua teidät jakamaan ilomme, kun otamme seuraavan askeleen yhteisellä matkallamme. Tämä verkkosivusto on suunniteltu tarjoamaan teille kaikki tarvitsemanne tiedot erityisestä päivästämme. Löydätte tietoa juhlapaikasta, aikataulusta, majoituksesta ja muusta.",
+    "rsvpButton": "Vastaa Kutsuun Täällä"
+  },
+  "When": {
+    "title": "Milloin",
+    "date": "Maanantaina 7. lokakuuta 2024",
+    "timeArrival": "14:00",
+    "timeCeremony": "15:00",
+    "description": "Menemme naimisiin <bold>{date}</bold>. Voitte saapua alkaen <bold>{timeArrival}</bold> ja seremonia alkaa klo <bold>{timeCeremony}</bold>",
+    "accommodation": "Paikan päällä on majoitusmahdollisuus (tiedot alla), joten jos aiotte yöpyä, suosittelemme varaamaan majoituksen <bold>7. ja 8. päivälle</bold>."
+  },
+  "Where": {
+    "title": "Missä",
+    "venueName": "The Farmhouse at Redcoats",
+    "addressLine1": "Redcoats Green",
+    "addressLine2": "Hitchin",
+    "addressLine3": "Hertfordshire",
+    "postcode": "SG4 7JR",
+    "phone": "01438 729500"
+  },
+  "ThemeFood": {
+    "title": "Teema & Ruoka",
+    "theme": "Ole Oma Outo Itsesti (Koska me olemme outoja ja niin olette tekin)",
+    "clothing": "Haluamme teidän viihtyvän, joten pukeutukaa miten haluatte, olkaa omia itsejänne. Voitte tulla hienosti pukeutuneina, hieman rennommin tai ehkä hieman fantasiahenkisesti!",
+    "food": "Pidämme juhlat, joten varautukaa tanssimaan, juomaan ja syömään. Tarjolla on BBQ, jossa on vegaanisia ja kasvissyöjävaihtoehtoja, joten jokaiselle löytyy jotakin. Ilmoittakaa mahdollisista mieltymyksistä <link>vastatessanne kutsuun alla</link>."
+  },
+  "Gallery": {
+    "title": "Lähes Kymmenen Vuotta Kasvua, Juomaa & Rakkautta",
+    "subtitle": "Ilmeisesti otamme selfieitä lähinnä juodessamme tai ulkomailla, mikä kuulostaa oikealta. Meillä on ollut monia seikkailuja viimeisen vuosikymmenen aikana."
+  },
+  "Message": {
+    "title": "Odotamme innolla näkevämme teidät juhlapäivänä!",
+    "body": "Meillä on livebändi koko päivän, yksityinen baari ja tervetuliaisjuomat. Virallista osuutta ei ole, joten voitte vastustaa niin paljon kuin haluatte, se tapahtuu silti."
+  },
+  "Gifts": {
+    "title": "Mitä",
+    "poem1": "Jotta lahjanne eivät päätyisi kiertoon tai kaappiin\nOlisimme todella kiitollisia rahasta",
+    "poem2": "Häämatkaa, autoa, taloa varten, kuka tietää\nAnteliaisuutenne muistoissamme ikuisesti hehkuu",
+    "poem3": "Mutta älkää ajatelko tätä maksuna\nLäsnäolonne, ei lahjanne, tuo meille iloa",
+    "dogsNote": "Vaikka rakastaisimme kutsua kaikkien lapset, tämä on vain aikuisille tarkoitettu tilaisuus. Huomioikaa, että tämä tapahtuma on vain omille koirillemme."
+  },
+  "RSVP": {
+    "title": "RSVP",
+    "subtitle": "Vastatkaa Alla",
+    "attendingLabel": "Osallistutteko?",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "yourDetails": "Tietonne",
+    "fullName": "Koko Nimi",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "dietaryLabel": "Onko teillä allergioita tai ruokavaliotoiveita?",
+    "preferenceLabel": "Mieltymys",
+    "allergensLabel": "Allergeenit",
+    "otherAllergenLabel": "Muu Allergeeni",
+    "plusOneLabel": "Tuotteko mukananne toisen vieraan? (esim. kumppaninne)",
+    "guestDetails": "Toisen Vieraan Tiedot",
+    "guestDietaryLabel": "Onko hänellä allergioita tai ruokavaliotoiveita?",
+    "accommodationLabel": "Tarvitsetteko majoitusta? (7. lokakuuta)",
+    "submitButton": "Lähetä Vastaus",
+    "successTitle": "Kiitos!",
+    "successMessage": "Vastauksenne on vastaanotettu."
+  },
+  "Navigation": {
+    "home": "Koti",
+    "when": "Milloin",
+    "where": "Missä",
+    "theme": "Teema",
+    "gallery": "Galleria",
+    "message": "Viesti",
+    "gifts": "Lahjat",
+    "rsvp": "RSVP"
+  }
+}
+

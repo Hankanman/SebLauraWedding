@@ -4,19 +4,21 @@ import { Home, Calendar, MapPin, Utensils, Image as ImageIcon, MessageSquare, Gi
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslations } from 'next-intl';
 
 const navItems = [
-  { id: "hero", icon: Home, label: "Home" },
-  { id: "when", icon: Calendar, label: "When" },
-  { id: "where", icon: MapPin, label: "Where" },
-  { id: "theme", icon: Utensils, label: "Theme" },
-  { id: "gallery", icon: ImageIcon, label: "Gallery" },
-  { id: "message", icon: MessageSquare, label: "Message" },
-  { id: "gifts", icon: Gift, label: "Gifts" },
-  { id: "RSVP", icon: Mail, label: "RSVP" },
+  { id: "hero", icon: Home, labelKey: "home" },
+  { id: "when", icon: Calendar, labelKey: "when" },
+  { id: "where", icon: MapPin, labelKey: "where" },
+  { id: "theme", icon: Utensils, labelKey: "theme" },
+  { id: "gallery", icon: ImageIcon, labelKey: "gallery" },
+  { id: "message", icon: MessageSquare, labelKey: "message" },
+  { id: "gifts", icon: Gift, labelKey: "gifts" },
+  { id: "RSVP", icon: Mail, labelKey: "rsvp" },
 ];
 
 export function StickyNav() {
+  const t = useTranslations('Navigation');
   const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
@@ -28,9 +30,7 @@ export function StickyNav() {
           }
         });
       },
-      {
-        rootMargin: "-50% 0px -50% 0px", // Trigger when section is in middle of viewport
-      }
+      { threshold: 0.5 }
     );
 
     navItems.forEach(({ id }) => {
@@ -50,21 +50,21 @@ export function StickyNav() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center pb-4 px-4 pointer-events-none">
-      <nav className="flex items-center gap-1 rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-md border border-gray-200 pointer-events-auto overflow-x-auto max-w-full">
-        {navItems.map(({ id, icon: Icon, label }) => (
+    <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center md:pb-4 md:px-4 pointer-events-none">
+      <nav className="flex w-full md:w-auto items-center justify-between md:justify-center gap-1 md:rounded-full bg-white/90 md:bg-white/80 p-2 md:p-2 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:shadow-lg backdrop-blur-md border-t md:border border-gray-200 pointer-events-auto">
+        {navItems.map(({ id, icon: Icon, labelKey }) => (
           <Link
             key={id}
             href={`#${id}`}
             onClick={(e) => scrollToSection(e, id)}
             className={cn(
-              "relative flex flex-col items-center justify-center rounded-full p-3 transition-all hover:bg-gray-100 min-w-12",
+              "relative flex flex-1 md:flex-none flex-col items-center justify-center rounded-lg md:rounded-full p-2 md:p-3 transition-all hover:bg-gray-100 min-w-0 md:min-w-[3rem]",
               activeSection === id ? "bg-brand text-white hover:bg-brand/90" : "text-gray-500"
             )}
-            title={label}
+            title={t(labelKey)}
           >
             <Icon size={20} />
-            <span className="sr-only">{label}</span>
+            <span className="sr-only">{t(labelKey)}</span>
             {activeSection === id && (
                <span className="absolute -top-1 right-1 h-2 w-2 rounded-full bg-white animate-pulse" />
             )}
@@ -74,4 +74,3 @@ export function StickyNav() {
     </div>
   );
 }
-
